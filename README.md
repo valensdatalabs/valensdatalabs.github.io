@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Welcome to Valens DataLabs
 
 You can use the [editor on GitHub](https://github.com/valensdatalabs/valensdatalabs.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
