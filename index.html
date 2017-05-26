@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <title>Valens Data Labs</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  
+.twitter {
+  font: normal normal 10px Arial;
+  text-align: center;
+  color: #998578;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.twitter {
+  color: #000000;
+  text-decoration: none;
+  display: block;
+  padding: 14px;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+.twitter:hover {
+  color: #FF7D6D;
+  text-decoration: none;
+}
+
+/* Floating Social Media Bar Style Starts Here */
+
+.fl-fl {
+  background: #f27304;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 4px;
+  width: 190px;
+  position: fixed;
+  right: -160px;
+  z-index: 1000;
+  font: normal normal 10px Arial;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+.fa {
+  font-size: 20px;
+  color: #fff;
+  padding: 10px 0;
+  width: 40px;
+  margin-left: 8px;
+  border-color: white
+}
+
+.fl-fl:hover {
+  right: 0;
+}
+
+.fl-fl a {
+  color: #fff !important;
+  text-decoration: none;
+  text-align: center;
+  line-height: 43px!important;
+  vertical-align: top!important;
+}
+
+.float-fb {
+  top: 160px;
+}
+
+.float-tw {
+  top: 215px;
+}
+
+.float-gp {
+  top: 270px;
+}
+
+.float-rs {
+  top: 325px;
+}
+
+.float-ig {
+  top: 380px;
+}
+
+.float-pn {
+  top: 435px;
+}
+/* Floating Social Media Bar Style Ends Here */
+    </style>
+  <style>
+  body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+  }
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }  
+  .jumbotron {
+      background-color: #f27304;
+      color: #fff;
+      padding: 100px 25px;
+      font-family: Montserrat, sans-serif;
+  }
+  .jumbotron-white {
+      background-color: #fff;
+      color: #fff;
+      padding: 30px;
+      font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+      padding: 60px 50px;
+  }
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+  .logo-small {
+      color: #f27304;
+      font-size: 50px;
+  }
+  .logo {
+      color: #f27304;
+      font-size: 200px;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #f27304;
+  }
+  .carousel-indicators li {
+      border-color: #f27304;
+  }
+  .carousel-indicators li.active {
+      background-color: #f27304;
+  }
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+  .panel {
+      border: 1px solid #f27304; 
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+      border: 1px solid #f27304;
+      background-color: #fff !important;
+      color: #f27304;
+  }
+  .panel-heading {
+      color: #fff !important;
+      background-color: #f27304 !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: white !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #f27304;
+      color: #fff;
+  }
+  .navbar {
+      margin-bottom: 0;
+      background-color: #f27304;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #f27304 !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #f27304;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
+  </style>
+  
+  <script type="text/javascript">
+  var form = document.getElementsByTagName('form')[0];
+   form.addEventListener('submit',contact,false);
+   function contact(e) {
+      // Prevent Default Form Submission
+      e.preventDefault();
+
+      var target = e.target || e.srcElement;
+      var i = 0;
+      var message = '';
+
+      // Loop Through All Input Fields
+      for(i = 0; i < target.length; ++i) {
+         // Check to make sure it's a value. Don't need to include Buttons
+         if(target[i].type != 'text' && target[i].type != 'textarea') {
+                // Skip to next input since this one doesn't match our rules
+            continue;
+         }
+
+         // Add Input Name and value followed by a line break
+         message += target[i].name + ': ' + target[i].value + "\r\n";
+      }
+      // Modify the hidden body input field that is required for the mailto: scheme
+      target.elements["body"].value = message;
+
+      // Submit the form since we previously stopped it. May cause recursive loop in some browsers? Should research this.
+      this.submit();
+   }
+</script>
+ 
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<form >
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage"><img src="Valens-Data-Labs.jpg" height="33"></a>
+      
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT US</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#careers">CAREERS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <div class="jumbotron-white text-center">
+  <h1> <img src="ValensDataLabs_1.png" height="400"/> </h1>
+ <p><h2>Put Your Data to Work</h2></p> 
+  <form>
+    
+  </form>
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>About Valens Data Labs</h2><br>
+      <h4>
+      Valens datalabs is an innovation lab which helps you gain unforeseen insights from your data. Modern day software systems generate, observe, and collect huge amount of data on a daily basis. The data is either under collected, and surely under-utilised. We at Valens Datalabs, help our customers collect, organise, store and leverage this data to get a competitive edge. 
+      <br>
+      <br>
+      We are a team of expert data engineers and data scientists with variety of experience in designing data driven analytics applications, big data, data science, machine learning, and modern application development.
+      </h4><br>
+      <br><button class="btn btn-default btn-lg">Get in Touch</button>
+    </div>
+    <div class="col-sm-4">
+     <span> <img src="favicon.jpg" /> </span>
+      </div>
+  </div>
+</div>
+
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center">
+  <h2>SERVICES</h2>
+  <h4>What we offer</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-dashboard logo-small"></span>
+      <h4>Big Data Engineering</h4>
+      <p>Build statistics is records which can truly build or destroy your outcomes.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-search logo-small"></span>
+      <h4>Spark, hadoop ecosystem and Elasticsearch consulting</h4>
+      <p>Cutting edge technology to process tera bytes of data in notime.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-cog logo-small"></span>
+      <h4> Data science and Machine Learning</h4>
+      <p>Make your data to talk to you.</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-signal logo-small"></span>
+      <h4>Data driven application development</h4>
+      <p>Build business decisions to Predict and progress </p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-scale logo-small"></span>
+      <h4 style="color:#303030;">Modern scalable API development</h4>
+      <p>Easy to inegrate and highly scalable architecture.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-modal-window logo-small"></span>
+      <h4 style="color:#303030;">Web application development</h4>
+      <p>Your desicion are just a click away everywhere you go!</p>
+    </div>
+  </div>
+</div>
+
+<div id="careers" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>Careers</h2><br>
+       Current Openings
+      <h4>Software Scientist</h4><br>
+        <ul>
+         <li  type="square">1 to 3 years of strong java programming experience </li>
+         <li  type="square">Very good knowledge of data-structures, algorithms, databases and SQL </li>
+         <li  type="square">Very strong in Object Oriented Programming and knowledge of Design Principles </li>
+         <li  type="square">Good knowledge of atleast one NoSQL datastore HBase, Cassandra, ElasticSearch, MongoDB </li>
+         <li  type="square">Hands on experience with AngularJS or ReactJS would be a plus </li>
+         <li  type="square">Hands on experience with hadoop / spark / spark streaming, kafka would be a huge plus </li>
+         <li  type="square">Good communication skills </li>
+        <b>What good candidates can expect from this opportunity:</b>
+        
+        <li  type="square"> An opportunity to work on most cutting edge big data technologies - spark, hadoop, kafka, HBase </li>
+        <li  type="square"> An opportunity to learn from industry experts </li>
+         </ul> 
+        
+      <br><span style="font-size:20px" class="glyphicon glyphicon-envelope"></span>   <a href="mailto:info@valensdatalabs.com">email us: info@valensdatalabs.com</a>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-signal logo"></span>
+    </div>
+  </div>
+</div>
+
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid">
+  
+  <h2>CONTACT</h2>
+  <div class="row">
+     <div class="col-sm-8">
+      <p><span style="font-size:20px" class="glyphicon glyphicon-map-marker"></span> Palladium Business Hub, New CG Rd, Chandkheda, Ahmedabad, Gujarat, India</p>
+      <p><span style="font-size:20px" class="glyphicon glyphicon-phone"></span><a href="tel:+91 9712918772"> +91 9712918772</a> </p>
+      <p><span style="font-size:20px" class="glyphicon glyphicon-envelope"></span><a href="mailto:info@valensdatalabs.com"> info@valensdatalabs.com </a> </p>
+      <p><img src="skype-512.png" height="20"><a href="skype:pranav_shukla"  target="_blank"> ValensDataLabs</a> </p>
+     </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-phone-alt logo"></span>
+    </div>
+   </div>
+</div>
+<!-- Floating Social Media bar Starts -->
+<div class="float-sm">
+  <div class="fl-fl float-fb">
+    <i class="fa fa-facebook"></i>
+    <a href="https://www.facebook.com/valensdatalabs" target="_blank"> Like us!</a>
+  </div>
+  <div class="fl-fl float-tw">
+    <i class="fa fa-twitter"></i>
+    <a href="https://twitter.com/valensdatalabs" target="_blank">Follow us!</a>
+  </div>
+  <div class="fl-fl float-gp">
+    <i class="fa fa-google-plus"></i>
+    <a href="https://plus.google.com/valensdatalabs" target="_blank">Recommend us!</a>
+  </div>
+  
+</div>
+
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>©2017 <a href="Valensdatalabs.com" title="Visit Valens Data Labs">www.valensdatalabs.com</a></p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+</form>
+</body>
+</html>
